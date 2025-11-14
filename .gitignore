@@ -1,0 +1,28 @@
+cat > .gitignore << 'EOF'
+# Node.js
+node_modules/
+npm-debug.log
+package-lock.json
+
+# Build artifacts
+target/
+*.war
+Docker-app/
+Docker-db/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+__pycache__/
+*.log
+
+# Jenkins
+.jenkins/
+EOF
